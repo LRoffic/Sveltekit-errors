@@ -1,6 +1,6 @@
 # Init project
 - Install mysql database with database.sql
-- Edit src/lib/server/config/db_config.json with your mysql credentials
+- Edit src/lib/server/config/db_config.json with your mysql credentials (dialect => "mysql")
 
 # Reproduce bug
 Run the project with 
