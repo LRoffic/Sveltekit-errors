@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+
+		<link rel="icon" href="%sveltekit.assets%/img/favicon.ico" />
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.19.0/tarteaucitron.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript">
+			tarteaucitron.init({
+				"privacyUrl"                 : "",
+				"hashtag"                    : "#cookie",
+				"cookieName"                 : "cookiergpd",
+				"orientation"                : "bottom",
+				"groupServices"              : true,
+				"showAlertSmall"             : false,
+				"closePopup"                 : true,
+				"showIcon"                   : true,
+				"iconPosition"               : "BottomLeft",
+				"iconSrc"                    : "%sveltekit.assets%/img/cookie1.png",
+				"adblocker"                  : true,
+				"DenyAllCta"                 : true,
+				"AcceptAllCta"               : true,
+				"highPrivacy"                : true,
+				"handleBrowserDNTRequest"    : false,
+				"removeCredit"               : false,
+				"moreInfoLink"               : true,
+				"useExternalCss"             : false,
+				"useExternalJs"              : false,
+				"readmoreLink"               : "",
+				"mandatory"                  : true,
+			});
+				
+			tarteaucitron.user.matomoId = "2";
+			(tarteaucitron.job = tarteaucitron.job || []).push('matomohightrack');
+			tarteaucitron.user.matomoHost = 'https://analytics.oxalt.fr/';
+	
+			tarteaucitron.user.gtagUa = 'G-1VCT47H4EJ';
+			(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+		</script>
+		
+		<script>navigator.serviceWorker.register("/service-worker.js")</script>
+		<link rel="manifest" href="/manifest.json" />
+
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="p-0 bg-gray-700 scroll-smooth scrollbar-w-80 scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-slate-800 hover:scrollbar-thumb-green-500">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
